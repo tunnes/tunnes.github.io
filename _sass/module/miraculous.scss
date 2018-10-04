@@ -1,0 +1,25 @@
+.miraculous {
+  &__list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    transform: rotate(90deg);
+
+    &-item {
+      font-size: 14px;
+      width: 80px;
+      font-family: 'Montserrat', sans-serif;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1000px) { 
+    &__list {
+      transform: unset;
+    }
+  }
+}
