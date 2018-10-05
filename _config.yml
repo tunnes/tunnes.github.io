@@ -16,8 +16,8 @@
 title: tunnes
 email: ayrton.felipe@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Meu blog e portfólio mas no fim um amontoado de memórias sobre desenvolvimento web em geral que
-  resolvi disponibilizar por necessidade de consultas e registros pessoais de tópicos que estudo.
+  Bem vindo ao meu amontoado de memórias sobre desenvolvimento web em geral que resolvi 
+  disponibilizar por necessidade de consultas e registros pessoais de tópicos que estudo.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  tunnes
