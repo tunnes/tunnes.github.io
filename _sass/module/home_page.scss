@@ -39,10 +39,6 @@
       font-family: 'Montserrat', sans-serif;
       font-size: 14px;
       line-height: 23px;  
-
-      &__signature {
-        width: 90px;
-      }
     }
   }
 
@@ -80,12 +76,6 @@
 
       &__subtitle { 
         text-align: justify;
-
-        &__signature {
-          margin-top: 50px;
-          margin-right: 5px;
-          align-self: flex-end;
-        }
       }
 
       &__name {

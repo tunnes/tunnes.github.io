@@ -24,48 +24,37 @@
   
   <body>
     <div class="page__default">
-      <div class="page__navbar"></div>
-      <div class="page__content">
-        <div class="home-page">
-          <div class="home-page__info-text">
-            <h1 class="home-page__info-text__title">
-              <img src="/assets/img/layout/person.svg" alt="an image.">
-              <div>
-                <span class="home-page__info-text__name">AYRTON FELIPE</span> 
-                <span class="home-page__info-text__nick">TUNNES</span>
-              </div>
-            </h1>
-            <p class="home-page__info-text__subtitle">
-              Bem vindo ao meu portfólio / blog / amontoado de memórias sobre desenvolvimento web em geral que
-              resolvi disponibilizar por necessidade de consultas e registros pessoais de tópicos que estudo. 
-              Irei registrar aqui publicações sobre JavaScript, Ruby, programação funcional e outras coisinhas bacanas,
-              sintam-se a vontade para utilizar como fonte de estudos, levantar críticas e sugestões.
-            </p>
-            <img src='/assets/img/layout/signature.svg' alt='tunnes signature (My signature).' class="home-page__info-text__subtitle__signature">
-          </div>
-          <div class="home-page__info-image">
-            <img src="/assets/img/layout/person.svg" alt="My wonder self draw (Ugly and monochromatic but adorable draw of my face).">
-          </div>
-        </div>
-      </div>
       <div class="page__miraculous">
         <ul class="miraculous__list">
           <li class="miraculous__list-item">
-            <a href="https://github.com/tunnes">
-              Github
+            <a href="/memorias" style="display:none">
+              Memórias
+            </a>
+          </li>
+          <li class="miraculous__list-item" style="display:none">
+            <a href="https://tunnes.github.io/docs/curriculo.pdf">  
+              Projetos
             </a>
           </li>
           <li class="miraculous__list-item">
-            <a href="https://www.linkedin.com/in/tunnes/">
+            <a href="https://linkedin.com/in/tunnes">
               Linkedin
             </a>
-          </li>
+          </li>          
           <li class="miraculous__list-item">
             <a href="https://tunnes.github.io/docs/curriculo.pdf">  
               Currículo
             </a>
           </li>
+          <li class="miraculous__list-item">
+            <a href="https://github.com/tunnes">
+              Github
+            </a>
+          </li>                
         </ul>
+      </div>      
+      <div class="page__content">
+        {{ content }}
       </div>
     </div>
   </body>

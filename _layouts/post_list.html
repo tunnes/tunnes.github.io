@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="post-list">
+  <!-- posts loop -->
+  {%- if site.posts.size > 0 -%}
+  
+  <h2 class="post-list__heading">
+    MEMÓRIAS
+  </h2>
+  <ul class="post-list__list">
+    {%- for post in site.posts -%}
+      <li class="post-list__item">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-list__item-date">{{ post.date | date: date_format }}</span>
+        <h3 class="post-list__item-title">
+          <a class="post-list__item-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+      </li>      
+    {%- endfor -%}
+  </ul>
+
+  <p class="post-list__subscribe">
+    <a href="{{ "/feed.xml" | relative_url }}">RSS FEED</a>
+  </p>    
+  {%- endif -%}
+  <!-- end -->
+</div>

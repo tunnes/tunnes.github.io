@@ -1,0 +1,53 @@
+.post {
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
+    margin-bottom: 15px;
+  }
+
+  &-title {
+    font-size: 45px;
+    font-weight: 500;
+  }
+
+  &-meta  {
+    color: #795548;
+  }
+
+  p {
+    line-height: 26px;
+  }
+
+  .highlighter-rouge {
+    color: #795548;
+  }
+
+  .highlighter-rouge, pre {
+    border: 1px solid #b19186;
+    border-radius: 3px;
+    background: #e6ccbf;
+    padding: 3px;
+    font-size: 15px;
+  }
+
+  pre {
+    padding: 8px 12px;
+    font-size: 17px;
+    overflow-x: auto;
+  }
+
+  .highlight {
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  a {
+    color: #846052;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

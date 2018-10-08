@@ -2,11 +2,16 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// @import "minima";
+// Base
+@import "base/syntax_highlighting";
 @import "base/typography";
 @import "base/reset";
+
+// Layouts
 @import "layouts/page";
+@import "layouts/post";
 
 // modules
 @import "module/miraculous";
 @import "module/home_page";
+@import "module/post_list";
