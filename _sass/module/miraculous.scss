@@ -17,9 +17,19 @@
     }
   }
 
-  @media only screen and (max-width: 1000px) { 
+  @media only screen and (max-width: 1000px) {
     &__list {
       transform: unset;
     }
+  }
+}
+
+@media only screen and (min-width: 1000px)  {
+  .page__miraculous {
+    position: fixed;
+    height: 100vh;
+  }
+  .page__content {
+    margin-left: 150px;
   }
 }

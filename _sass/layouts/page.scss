@@ -1,9 +1,9 @@
 .page {
-  
+
   &__default {
     width: 100%;
     height: 100vh;
-    background-color: #f6f1ef;
+    // background-color: #f6f1ef;
     display: flex;
     flex-flow: row;
     max-width: 1400px;
@@ -22,19 +22,22 @@
     justify-content: center;
   }
 
-  @media only screen and (max-width: 1000px) { 
+  @media only screen and (max-width: 1000px) {
     &__default {
       flex-flow: column;
       justify-content: space-between;
     }
 
-    &__content { 
+    &__content {
       height: -webkit-fill-available;
     }
 
-    &__miraculous { 
-      width: 100%;
+    &__miraculous {
+      width: auto;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
-    
+
   }
 }

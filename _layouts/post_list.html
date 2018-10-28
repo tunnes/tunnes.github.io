@@ -5,9 +5,9 @@ layout: default
 <div class="post-list">
   <!-- posts loop -->
   {%- if site.posts.size > 0 -%}
-  
+
   <h2 class="post-list__heading">
-    MEMÓRIAS
+    BLOG
   </h2>
   <ul class="post-list__list">
     {%- for post in site.posts -%}
@@ -16,16 +16,17 @@ layout: default
         <span class="post-list__item-date">{{ post.date | date: date_format }}</span>
         <h3 class="post-list__item-title">
           <a class="post-list__item-link" href="{{ post.url | relative_url }}">
+            <span class="post-list__item-category">{{ post.categories }}</span>
             {{ post.title | escape }}
           </a>
         </h3>
-      </li>      
+      </li>
     {%- endfor -%}
   </ul>
 
-  <p class="post-list__subscribe">
+  <p class="post-list__subscribe" style="display: none">
     <a href="{{ "/feed.xml" | relative_url }}">RSS FEED</a>
-  </p>    
+  </p>
   {%- endif -%}
   <!-- end -->
 </div>

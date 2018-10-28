@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 100px 0px;
+
+  &__signature {
+    width: 100px;
+  }
+}

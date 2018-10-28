@@ -16,11 +16,14 @@
 title: tunnes
 email: ayrton.felipe@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Bem vindo ao meu amontoado de memórias sobre desenvolvimento web em geral que resolvi 
+  Bem vindo ao meu amontoado de memórias sobre desenvolvimento web em geral que resolvi
   disponibilizar por necessidade de consultas e registros pessoais de tópicos que estudo.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  tunnes
+disqus:
+  shortname: tunnes
+date_format: '%b %d, %Y'
 
 # Build settings
 markdown: kramdown
@@ -28,9 +31,10 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-gist
 
 # mostrando somente o título
-permalink: /:title
+permalink: /:categories/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

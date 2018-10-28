@@ -6,9 +6,22 @@
     margin-bottom: 15px;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  li {
+    list-style: none;
+  }
+
   &-title {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 50px;
   }
 
   &-meta  {
@@ -16,11 +29,9 @@
   }
 
   p {
-    line-height: 26px;
-  }
-
-  .highlighter-rouge {
-    color: #795548;
+    line-height: 28px;
+    font-size: 15px;
+    color: #565867;
   }
 
   .highlighter-rouge, pre {
@@ -31,10 +42,21 @@
     font-size: 15px;
   }
 
+  .highlighter-rouge {
+    color: #3f3e3bc4;
+    background: #d6d6d6a8;
+    border: 1px solid #282a2b00;
+    display: inline-block;
+    padding: 0px 3px;
+    line-height: 19px;
+    margin: 0px 1px;
+  }
+
   pre {
     padding: 8px 12px;
     font-size: 17px;
     overflow-x: auto;
+    margin: 40px 0px;
   }
 
   .highlight {
@@ -44,10 +66,19 @@
   }
 
   a {
-    color: #846052;
-    text-decoration: none;
+    color: #77726f;
+    text-decoration: underline;
     &:hover {
       text-decoration: underline;
     }
   }
+
+  strong {
+    font-weight: 100;
+    color: #000;
+  }
+}
+
+.post-content {
+  margin-bottom: 100px;
 }
